@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de layout em grid</title>
+    <link rel="stylesheet" href="/Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <style>
+        .h400 {
+            height: 400px;
+        }
+
+        .h100{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de layout em grid</h1>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col bg-dark bg-opacity-50 h400"></div>
+            <div class="col-3 bg-dark bg-opacity-75 h400"></div>
+            <div class="col-4 bg-dark bg-opacity-25 h400"></div>
+            <div class="col bg-dark bg-opacity-50 h400"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2>Container divido em cabeçalho, conteúdos laterais e rodapé</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+            <div class="col-12  col-sm-3 bg-dark bg-opacity-75 h400"></div>
+            <div class="col-12 col-sm-9 bg-dark bg-opacity-25 h400"></div>
+            <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Container com uma linha com 5 colunas iguais e outro com uma linha e 7 colunas iguais</h3>
+
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-75 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-75 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+            </div>
+            <div class="row">
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-75 h100"></div>
+                <div class="col bg-dark bg-opacity-25 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-25 h100"></div>
+                <div class="col bg-dark bg-opacity-50 h100"></div>
+                <div class="col bg-dark bg-opacity-25 h100"></div>
+            </div>
+        </div>
+    </div>
+    <h3><a href="../Página-principal.html">Voltar ao início</a></h3>
+    
+        <script src="../Bootstrap/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
