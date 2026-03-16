@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia</title>
+    <link rel="stylesheet" href="/Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+</head>
+<body>
+   <h1>Formulários</h1>
+
+   <div class="container p-5">
+    <form action="">
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" id="email" class="form-control" placeholder="Digite seu email">
+            <div class="form-text">Nunca compartilharemos seu email com terceiros</div>
+        </div>
+        <div class="mb-3">
+            <label for="senha" class="form-label">senha</label>
+            <input type="text" id="senha" class="form-control">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" id="lembrar" class="form-check-input">
+            <label for="lembrar" class="form-check-label">Lembrar de mim</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+    <hr>
+    <input type="file" id="arquivo" class="form-control">
+    <hr>
+    <div class="mb-3"><label for="" class="form-label">cidade</label>
+        <input type="text" class="form-control" list="cidades" placeholder="Digite para buscar...">
+        <datalist id="cidades">
+                <option value="Cidade 1"></option>
+                <option value="Cidade 2"></option>
+                <option value="Cidade 3"></option>
+                <option value="Cidade 4"></option>
+                <option value="Cidade 5"></option>
+                <option value="Cidade 6"></option>
+        </datalist>
+    </div>
+   </div>
+
+   <h2>Campos select, tange e botões</h2>
+
+   <div class="container p-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Opção desejada</label>
+        <select class="form-select">
+            <option value="">Opção 1</option>
+            <option value="">Opção 2</option>
+            <option value="">Opção 3</option>
+            <option value="">Opção 4</option>
+            <option value="">Opção 5</option>
+            <option value="">Opção 6</option>
+        </select>
+    </div>
+    <hr>
+    <div class="mb-3">
+        <label for="faixa" class="form-label">Etapa</label>
+        <input type="range" class="form-range" id="faixa" min="1" max="5" step="1" value="4">
+    </div>
+    <hr>
+    <a href="#" class="btn btn-primary">Link</a>
+    <a href="#" class="btn btn-outline-success">Link</a>
+    <hr>
+
+    <button class="btn btn-warning " disabled >Botão</button>
+    <hr>
+    <button class="btn btn-primary" data-bs-toggle="button">Botão marcável</button>
+   </div>
+   <hr>
+
+   <h3>Campos de checagem</h3>
+    <div class="container p-5">
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="novo">
+            <label for="novo" class="form-check-label">Produto novo</label>
+        </div>
+    </div>
+    <hr>
+    <div class="container p-5">
+        <div class="mb-3 form-check">
+            <input type="radio" class="form-check-input" id="novo" name="estado">
+            <label for="novo" class="form-check-label">Produto novo</label>
+        </div>
+    </div>
+    <div class="container p-5">
+        <div class="mb-3 form-check">
+            <input type="radio" class="form-check-input" id="novo" name=estado>
+            <label for="novo" class="form-check-label">Produto usado</label>
+        </div>
+    </div>
+    <hr>
+
+    <div class="mb-3 form-switch">
+            <input type="checkbox" class="form-check-input" id="novo">
+            <label for="novo" class="form-check-label">Produto novo</label>
+    </div>
+    <hr>
+    <div class="mb-3">
+        <input type="radio" name="tipoentrega" id="entregarapida" class="btn-check">
+        <label for="entregarapida" class="btn btn-outline-primary">Entrega rápida</label>
+    </div>
+
+     <div class="mb-3">
+        <input type="radio" name="tipoentrega" id="entregalenta" class="btn-check">
+        <label for="entregalenta" class="btn btn-outline-primary">Entrega lenta</label>
+    </div>
+    <hr>
+
+    <h3>Campos com título flutuante</h3>
+
+    <div class="container p-5">
+        <div class="form-floating mb-3">
+
+            <input type="email" id="email" class="form-control" placeholder=" ">
+            <label for="email" class="form-label">E-mail</label>
+        </div>
+        <div class="form-floating">
+
+            <input type="password" id="senha" class="form-control" placeholder=" ">
+            <label for="senha" class="form-label">Senha</label>
+        </div>
+        <hr>
+
+        <div class="form-floating">
+            <textarea name="" id="msg" class="form-control" style="height:100px" placeholder=" "></textarea>
+            <label for="msg">Mensagem</label>
+        </div>
+        <hr>
+        <div class="form-floating">
+            <select name="" id="cidade" class="form-select" placeholder=" ">
+                <option value="">Cidade 1</option>
+                <option value="">Cidade 2</option>
+                <option value="">Cidade 3</option>
+                <option value="">Cidade 4</option>
+                <option value="">Cidade 5</option>
+                <option value="">Cidade 6</option>
+            </select>
+            <label for="cidade">Cidade</label>
+        </div>
+    </div>
+
+    <hr>
+    <h3>Complemento de campos</h3>
+
+    <div class="container p-5">
+        <div class="mb-3 input-group">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <hr>
+    
+    <h3>Layout de formulário</h3>
+
+    <div class="container p-5">
+        <div class="row mb-3 g-2">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Campo 1">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Campo 2">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Campo 3">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Campo 4">
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-3">
+            <label for="" class="col-form-label col-2">E-mail</label>
+            <div class="col-10">
+            <input type="email" class="form-control">
+            </div>
+        </div>
+
+        <hr>
+
+        <h1 class="display-3">Endereço</h1>
+        <hr>
+        <form method="post" class="needs-validation" novalidate>
+            <div class="row mb-4 g-4">
+                <div class="col-7">
+                    <label for="logradouro" class="form-label">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro" required>
+                    <div class="invalid-feedback">
+                        Você deve informar o logradouro
+                    </div>
+                </div>
+                <div class="col-2">
+                    <label for="numero" class="form-label">Número</label>
+                    <input type="text" class="form-control" id="numero">
+                </div>
+                <div class="col-3">
+                    <label for="complemento" class="form-label">Complemento</label>
+                    <input type="text" class="form-control" id="complemento">
+                </div>
+                <div class="col-6">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro">
+                </div>
+                <div class="col-6">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade">
+                </div>
+                <div class="col-6">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="estado">
+                </div>
+                <div class="col-2">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" pattern="[0-9]{8}">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input type="checkbox" value="" id="termos">
+                        <label for="termos" classe="form-check-label">
+                            Concordo com os termos e condições
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-outline-primary">Cadastrar</button>
+        </form>
+    </div>
+
+    <h3><a href="../index.html">Voltar ao início</a></h3>
+    <script>
+        (() => {
+  'use strict'
+
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+</body>
+</html>
